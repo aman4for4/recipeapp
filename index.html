@@ -1,0 +1,65 @@
+html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+CKL9EIR+ZOhtIloN19GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3196P9sdNyeRssA==" 
+    crossorigin="anonymous"
+/>
+<button id="home-btn" onclick="goToHome()">🏠 Home</button>
+    <title>Recipe App</title>
+</head>
+<body>
+  <div id="offline-message" style="display:none; background-color: #ff4d4d; color: white; text-align: center; padding: 10px;">
+   ⚠️ You are currently offline.
+  </div>
+  
+    <header>
+      <nav>
+        <h1>Recipe App</h1>
+        <form>
+          <input type="text" placeholder="Search for recipes..." class="searchBox">
+          <button type="submit" class="searchBtn">Search</button>
+        </form>
+        <button class="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
+       
+
+      </nav>
+      
+    </header> 
+      <main>
+        <section>
+            <div class="recipe-container">
+                <h2> Search your favourite recipes</h2>
+            </div>
+            <section class="favourites-section">
+              <h2>❤️ Favourite Recipes</h2>
+              <div class="favourites-container"></div>
+            </section>
+            
+            <div class="recently-viewed-container">
+              <h2>Recently Viewed Recipes</h2>
+              <div class="recently-viewed" id="recentlyViewedRecipes"></div>
+             
+            </div>
+
+            
+            <div class="recipe-details">
+               
+                
+                <button type="button" class="recipe-close-btn">
+                    <i class="fas fa-times">x</i>
+                </button>
+                <div class="recipe-details-content"></div>
+            </div>
+        </section>
+      </main> 
+ <script src="script.js"></script>
+ 
+</body>
+</html>
